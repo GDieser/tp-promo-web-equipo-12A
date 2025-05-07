@@ -21,6 +21,9 @@ namespace TP_PromoWeb_Equipo_12A
 
             rptArticulo.DataSource = ListaArticulos;
             rptArticulo.DataBind();
+
+            //rptImagenes
+
         }
     }
 }
