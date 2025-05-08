@@ -42,6 +42,7 @@
 
                                         <asp:Repeater ID="rptImagenes" DataSource='<%# Eval("Imagenes") %>' runat="server">
                                             <ItemTemplate>
+                                               
                                                 <div class='carousel-item <%# Container.ItemIndex == 0 ? "active" : "" %>'>
                                                     <img src='<%# Eval("ImagenUrl") %>' class="d-block w-100" alt="..." />
                                                 </div>
