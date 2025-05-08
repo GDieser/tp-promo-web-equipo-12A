@@ -20,6 +20,20 @@ namespace Servicio
             comando = new SqlCommand();
 
         }
+        public object ejecutarEscalar()
+        {
+            try
+            {
+                comando.Connection = conexion;
+                conexion.Open();
+                return comando.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public SqlDataReader Lector
         {
             get { return lector; }

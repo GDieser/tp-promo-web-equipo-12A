@@ -68,7 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+<<<<<<< HEAD
     <Content Include="RegistroUsuario.aspx" />
+=======
+    <Content Include="ElegirPremio.aspx" />
+>>>>>>> 62606264051708d001446de2aa8676ac33f7c30b
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +82,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirPremio.aspx.cs">
+      <DependentUpon>ElegirPremio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ElegirPremio.aspx.designer.cs">
+      <DependentUpon>ElegirPremio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
