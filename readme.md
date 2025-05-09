@@ -29,7 +29,6 @@ Este proyecto consiste en una aplicación web desarrollada en **ASP.NET Web Form
 - Visual Studio 2019 o superior  
 - .NET Framework 4.8  
 - SQL Server (local o remoto)  
-- Acceso al servidor SMTP (si se desea habilitar envío de correos)
 
 ### Clonación del repositorio
 
