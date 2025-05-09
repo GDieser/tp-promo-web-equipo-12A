@@ -68,11 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-<<<<<<< HEAD
     <Content Include="RegistroUsuario.aspx" />
-=======
     <Content Include="ElegirPremio.aspx" />
->>>>>>> 62606264051708d001446de2aa8676ac33f7c30b
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

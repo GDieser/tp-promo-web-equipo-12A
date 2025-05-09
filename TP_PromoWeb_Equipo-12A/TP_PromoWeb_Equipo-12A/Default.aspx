@@ -2,13 +2,6 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <h1>Hola Mundo</h1>
-    
-=======
-=======
->>>>>>> 62606264051708d001446de2aa8676ac33f7c30b
 
     <div class="d-flex flex-column align-items-center text-center">
 
@@ -31,8 +24,4 @@
         </div>
     </div>
 
-<<<<<<< HEAD
->>>>>>> 62606264051708d001446de2aa8676ac33f7c30b
-=======
->>>>>>> 62606264051708d001446de2aa8676ac33f7c30b
 </asp:Content>
