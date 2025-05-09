@@ -66,7 +66,7 @@
                                     <h5 class="card-title"><%# Eval("Nombre") %></h5>
                                     <p class="card-text"><%# Eval("Descripcion") %></p>
                                     <!--Provisorio para redireccionar a la page de carga del cliente, para probar-->
-                                    <a href="Default.aspx?IdArticulo=<%# Eval("IdArticulo") %>" class="btn btn-primary">Elegir</a>
+                                    <a href="RegistroUsuario.aspx?idArticulo=<%# Eval("IdArticulo") %>" class="btn btn-primary">Elegir</a>
                                 </div>
                             </div>
                         </div>

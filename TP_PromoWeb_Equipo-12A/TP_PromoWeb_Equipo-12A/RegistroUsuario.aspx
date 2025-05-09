@@ -16,7 +16,7 @@
 
 
     <div class="container mt-4">
-        <h2 class="mb-4">Formulario de Cliente</h2>
+        <h2 class="mb-4">¡Ultimo pasito! ¡¡A registrarse!!</h2>
 
         <div class="row mb-3">
             <label class="col-sm-2 col-form-label">DNI</label>
