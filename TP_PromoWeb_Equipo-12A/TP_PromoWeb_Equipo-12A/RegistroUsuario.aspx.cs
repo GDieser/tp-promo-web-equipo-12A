@@ -22,7 +22,6 @@ namespace TP_PromoWeb_Equipo_12A
                 if (Session["voucher"] == null)
                 {
                     mostrarError("ERROR DE VOUCHER", "Voucher incorrecto, porfavor intente nuevamente");
-
                 }
                 else
                 {
