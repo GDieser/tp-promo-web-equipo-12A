@@ -19,7 +19,16 @@ namespace TP_PromoWeb_Equipo_12A
             {
                 txtDni.Focus();
                 hdnIdArticulo.Value = Request.QueryString["idArticulo"];
-                hdnVoucher.Value = Request.QueryString["voucher"];
+                if (Session["voucher"] == null)
+                {
+                    mostrarError("ERROR DE VOUCHER", "Voucher incorrecto, porfavor intente nuevamente");
+
+                }
+                else
+                {
+                    hdnVoucher.Value = Session["voucher"].ToString();
+                    //hdnVoucher.Value = "Codigo04"; Simulado para pruebas unitarias
+                }
             }
         }
 
@@ -68,10 +77,10 @@ namespace TP_PromoWeb_Equipo_12A
             Cliente cliente = new Cliente
             {
                 IdCliente = int.Parse(hdnIdCliente.Value),
-                Documento = txtDni.Text,
-                Nombre = txtNombre.Text,
-                Apellido = txtApellido.Text,
-                Email = txtEmail.Text,
+                Documento = txtDni.Text.Trim(),
+                Nombre = txtNombre.Text.Trim(),
+                Apellido = txtApellido.Text.Trim(),
+                Email = txtEmail.Text.Trim(),
                 Direccion = txtDireccion.Text,
                 Ciudad = txtCiudad.Text,
                 CodigoPostal = int.Parse(txtCp.Text)
@@ -89,7 +98,9 @@ namespace TP_PromoWeb_Equipo_12A
                     !string.IsNullOrEmpty(hdnIdArticulo.Value) &&
                     servicioVoucher.asignarVoucher(cliente.IdCliente, int.Parse(hdnIdArticulo.Value), hdnVoucher.Value))
                 {
-                    Response.Redirect("RegistroExitoso.aspx");
+                    ArticuloServicio articuloServicio = new ArticuloServicio();
+                    Articulo articulo = articuloServicio.obtenerArticulo(int.Parse(hdnIdArticulo.Value));
+                    enviarMail(cliente.Email, cliente.Nombre, articulo.Imagenes[0].ImagenUrl, articulo.Nombre);
                 }
                 else
                 {
@@ -162,7 +173,7 @@ namespace TP_PromoWeb_Equipo_12A
                 return false;
 
             string patron = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            if(!Regex.IsMatch(campo.Text.Trim(), patron, RegexOptions.IgnoreCase))
+            if (!Regex.IsMatch(campo.Text.Trim(), patron, RegexOptions.IgnoreCase))
             {
                 errorLabel.Text = mensajeError;
                 return true;
@@ -177,6 +188,16 @@ namespace TP_PromoWeb_Equipo_12A
             lblCuerpoError.Text = cuerpo;
             string script = "var modal = new bootstrap.Modal(document.getElementById('modalError')); modal.show();";
             ScriptManager.RegisterStartupScript(this, this.GetType(), "modalError", script, true);
+        }
+
+        private void enviarMail(string destinatarioEmail, string nombreUsuario, string imagenURL, string nombreArticulo)
+        {
+            ServicioMail servicioMail = new ServicioMail();
+            if (!servicioMail.EnviarCorreoSorteo(destinatarioEmail, nombreUsuario, imagenURL, nombreArticulo))
+            {
+                mostrarError("Error al enviar el correo", "No se pudo enviar el correo de confirmación. Por favor, intente nuevamente.");
+            }
+            Response.Redirect("Exito.aspx");
         }
     }
 }

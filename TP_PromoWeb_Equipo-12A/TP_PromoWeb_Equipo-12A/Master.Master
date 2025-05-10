@@ -103,92 +103,99 @@
             <path
                 d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
         </symbol>
-        <form id="form1" runat="server">
+    </svg>
+    <form id="form1" runat="server">
 
-            <div class="d-flex flex-column min-vh-100">
+        <div class="d-flex flex-column min-vh-100">
 
-                <nav class="navbar navbar-expand-lg bg-dark py-2" data-bs-theme="dark">
-                    <div class="container-fluid">
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="navbar-brand" href="Default.aspx">
-                                        <img src="https://images.vexels.com/media/users/3/223204/isolated/preview/a603755020e70576e1f4a08b012835d4-home-icon-flat-design.png?w=360" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                                        Home
-                                    </a>
-                                </li>
-                            </ul>
+            <nav class="navbar navbar-expand-lg bg-dark py-2" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="Default.aspx">
+                                    <img src="https://images.vexels.com/media/users/3/223204/isolated/preview/a603755020e70576e1f4a08b012835d4-home-icon-flat-design.png?w=360" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                                    Home
+                                </a>
+                            </li>
+                        </ul>
 
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item dropdown w-25" data-bs-theme="light">
-                                    <button
-                                        class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
-                                        id="bd-theme"
-                                        type="button"
-                                        aria-expanded="false"
-                                        data-bs-toggle="dropdown"
-                                        data-bs-display="static">
-                                        <svg
-                                            class="bi my-1 theme-icon-active"
-                                            width="16"
-                                            height="16"
-                                            fill="currentColor">
-                                            <use href="#circle-half"></use>
-                                        </svg>
-                                        <span class="d-lg-none ms-2">Toggle theme</span>
-                                    </button>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown w-25" data-bs-theme="light">
+                                <button
+                                    class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                                    id="bd-theme"
+                                    type="button"
+                                    aria-expanded="false"
+                                    data-bs-toggle="dropdown"
+                                    data-bs-display="static">
+                                    <svg
+                                        class="bi my-1 theme-icon-active"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor">
+                                        <use href="#circle-half"></use>
+                                    </svg>
+                                    <span class="d-lg-none ms-2">Toggle theme</span>
+                                </button>
 
-                                    <ul
-                                        class="dropdown-menu dropdown-menu-end px-1"
-                                        aria-labelledby="bd-theme">
-                                        <li>
-                                            <button
-                                                type="button"
-                                                class="dropdown-item d-flex align-items-center"
-                                                data-bs-theme-value="light">
-                                        <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
-                                            <use href="#sun-fill"></use>
-                                        </svg> Light </button>
-                                        </li>
-                                        <li>
-                                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end px-1"
+                                    aria-labelledby="bd-theme">
+                                    <li>
+                                        <button
+                                            type="button"
+                                            class="dropdown-item d-flex align-items-center"
+                                            data-bs-theme-value="light">
+                                            <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                                                <use href="#sun-fill"></use>
+                                            </svg>
+                                            Light
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
                                             <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
                                                 <use href="#moon-stars-fill"></use>
-                                            </svg> Dark </button>
-                                        </li>
-                                        <li>
-                                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+                                            </svg>
+                                            Dark
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
                                             <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
                                                 <use href="#circle-half"></use>
-                                            </svg> Auto </button>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                                            </svg>
+                                            Auto
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-
-                <div class="container">
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
                 </div>
+            </nav>
 
-                <footer class="bg-dark text-white text-center py-3 mt-auto" data-bs-theme="dark">
-                &copy;2025 Grupo 12A.
-            </footer>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
 
-        </form>
+            <footer class="bg-dark text-white text-center py-3 mt-auto" data-bs-theme="dark">
+                &copy;2025 Grupo 12A.
+            </footer>
+        </div>
+
+    </form>
 </body>
 </html>

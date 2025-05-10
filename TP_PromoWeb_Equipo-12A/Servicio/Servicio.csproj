@@ -52,6 +52,7 @@
     <Compile Include="ImagenServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicioCliente.cs" />
+    <Compile Include="ServicioMail.cs" />
     <Compile Include="ServicioVoucher.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Exito.aspx" />
     <Content Include="RegistroUsuario.aspx" />
     <Content Include="ElegirPremio.aspx" />
     <Content Include="Web.config" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="ElegirPremio.aspx.designer.cs">
       <DependentUpon>ElegirPremio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exito.aspx.cs">
+      <DependentUpon>Exito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exito.aspx.designer.cs">
+      <DependentUpon>Exito.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>

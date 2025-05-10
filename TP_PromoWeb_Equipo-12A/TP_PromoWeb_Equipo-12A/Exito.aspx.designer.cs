@@ -11,7 +11,7 @@ namespace TP_PromoWeb_Equipo_12A
 {
 
 
-    public partial class Default
+    public partial class Exito
     {
     }
 }
