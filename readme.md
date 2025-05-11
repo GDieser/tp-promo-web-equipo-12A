@@ -33,7 +33,8 @@ Este proyecto consiste en una aplicación web desarrollada en **ASP.NET Web Form
 ### Clonación del repositorio
 
 ```bash
-git clone https://github.com/GDieser/tp-promo-web-equipo-12A´´´
+git clone https://github.com/GDieser/tp-promo-web-equipo-12A
+```
 
 ## 🚀 Envio de Correos
 
