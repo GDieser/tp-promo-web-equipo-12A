@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!--<h1> pagina vaucher </h1>-->
+  
       <div class="container mt-5"> 
         <div class="row justify-content-center">
             <div class="col-md-6 text-center border-top border-bottom py-4"> 

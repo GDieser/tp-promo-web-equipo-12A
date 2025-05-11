@@ -27,8 +27,8 @@ namespace TP_PromoWeb_Equipo_12A
                 }
                 else
                 {
-                    lblErrorVoucher.Text = "*El código es invalido o ya fue canjeado!";
-                    lblErrorVoucher.Visible = true;
+                    Response.Redirect("VoucherInvalido.aspx");
+  
                 }
 
             }
@@ -39,7 +39,7 @@ namespace TP_PromoWeb_Equipo_12A
         {
             if (string.IsNullOrEmpty(txtVoucher.Text))
             {
-                lblErrorVoucher.Text = "*Debés ingresar el codigo del Voucher !";
+                lblErrorVoucher.Text = "* Debés ingresar el codigo del Voucher !";
                 lblErrorVoucher.Visible = true;
                 return false;
             }

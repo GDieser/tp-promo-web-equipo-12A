@@ -73,6 +73,7 @@
     <Content Include="Exito.aspx" />
     <Content Include="RegistroUsuario.aspx" />
     <Content Include="ElegirPremio.aspx" />
+    <Content Include="VoucherInvalido.aspx" />
     <Content Include="Web.config" />
     <Content Include="IngresoVoucher.aspx" />
   </ItemGroup>
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="IngresoVoucher.aspx.designer.cs">
       <DependentUpon>IngresoVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherInvalido.aspx.cs">
+      <DependentUpon>VoucherInvalido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoucherInvalido.aspx.designer.cs">
+      <DependentUpon>VoucherInvalido.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
