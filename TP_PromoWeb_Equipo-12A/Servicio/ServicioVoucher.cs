@@ -9,6 +9,40 @@ namespace Servicio
 {
     public class ServicioVoucher
     {
+        public AccesoDatos datos = new AccesoDatos();
+        public bool BuscarVoucher(string codigo)
+        {
+
+            string consulta = "SELECT CodigoVoucher, IdCliente, FechaCanje, IdArticulo FROM Vouchers WHERE CodigoVoucher = @codigo ";
+
+            try
+            {
+                datos.setConsulta(consulta);
+                datos.setParametro("@codigo", codigo);
+                datos.ejecutarLectura();
+
+
+                if (datos.Lector.Read())
+                {
+                    if (Convert.IsDBNull(datos.Lector["IdCliente"]))
+                        return true;
+
+                    return false;
+                }
+                else
+                {
+                    return false;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
         public bool asignarVoucher(int idCliente, int idArticulo, string voucher)
         {
             AccesoDatos datos = null;

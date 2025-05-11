@@ -12,12 +12,12 @@
                 </div>
 
                 <div class="mb-3">
-                    <asp:TextBox ID="txtVoucher" runat="server" CssClass="form-control"></asp:TextBox>
-                  <!--  <asp:Label ID="lblErrorVoucher" Font-Size="Small" CssClass="text-danger" Visible="false" runat="server" />-->
+                    <asp:TextBox ID="txtVoucher" runat="server" CssClass="form-control" ></asp:TextBox>
+                   <asp:Label ID="lblErrorVoucher" Font-Size="Small" CssClass="text-danger" Visible="false" runat="server" />
                 </div>
 
                 <div class="mb-3">
-                    <asp:Button ID="btnSiguiente" runat="server" Text="ingresar" CssClass="btn btn-primary"  />
+                    <asp:Button ID="btnSiguiente" runat="server" Text="ingresar" CssClass="btn btn-primary" OnClick="btnSiguiente_Click" />
                 </div>
 
             </div>
