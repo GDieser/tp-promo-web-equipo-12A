@@ -20,14 +20,16 @@ namespace TP_PromoWeb_Equipo_12A
 
             if (ValidarCodigo())
             {
-                if (servicio.BuscarVoucher(txtVoucher.Text))
+                bool valido = false;
+
+                if (servicio.BuscarVoucher(txtVoucher.Text, ref valido))
                 {
                     Session.Add("voucher", txtVoucher.Text);
                     Response.Redirect("ElegirPremio.aspx");
                 }
                 else
                 {
-                    Response.Redirect("VoucherInvalido.aspx");
+                    Response.Redirect("VoucherInvalido.aspx?valido="+valido);
   
                 }
 
@@ -39,7 +41,7 @@ namespace TP_PromoWeb_Equipo_12A
         {
             if (string.IsNullOrEmpty(txtVoucher.Text))
             {
-                lblErrorVoucher.Text = "* Debés ingresar el codigo del Voucher !";
+                lblErrorVoucher.Text = "* ¡Debes ingresar el código del Voucher!";
                 lblErrorVoucher.Visible = true;
                 return false;
             }

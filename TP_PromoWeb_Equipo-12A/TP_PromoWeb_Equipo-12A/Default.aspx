@@ -5,9 +5,10 @@
 
     <div class="d-flex flex-column align-items-center text-center">
 
-        <div class="card mx-auto my-3 w-100" style="max-width: 960px;">
+        <div class="card border-info mx-auto my-3 w-100" style="max-width: 960px;">
             <div class="card-body">
-                <h1 class="card-title">🎉¡Gran Sorteo!🎉</h1>
+                <h1 class="card-header">🎉¡Gran Sorteo!🎉</h1>
+                <br />
                 <h4 class="card-text">¿Nos volvimos locos? Puede ser!</h4>
                 <h5 class="card-text">Con tu compra realizada en nuestros comercios adheridos te haremos la entrega de un voucher para participar por increíbles premios!</h5>
                 <br />
@@ -16,12 +17,13 @@
                 <h5 class="card-text">¿Qué esperas? Participa!</h5>
             </div>
         </div>
-        <div class="card " style="width: 18rem;">
+        <div class="card border-info " style="width: 18rem;">
             <img src="https://cdn-icons-png.flaticon.com/512/3209/3209955.png" class="card-img-top" alt="regalo">
             <div class="card-body d-grid gap-2">
                 <a href="IngresoVoucher.aspx" class="btn btn-success">¡Participa!</a>
             </div>
         </div>
     </div>
+
 
 </asp:Content>

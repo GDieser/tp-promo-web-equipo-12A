@@ -111,7 +111,7 @@
         <div class="row mt-4">
             <div class="col-sm-6 offset-sm-2">
                 <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-primary me-2" OnClick="btnAceptar_Click" />
-                <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-secondary" PostBackUrl="~/Default.aspx" />
+                <asp:Button ID="btnVolver" runat="server" Text="Volver" CssClass="btn btn-secondary" PostBackUrl="~/ElegirPremio.aspx" />
             </div>
         </div>
     </div>

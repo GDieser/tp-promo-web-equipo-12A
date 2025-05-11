@@ -10,7 +10,7 @@ namespace Servicio
     public class ServicioVoucher
     {
         public AccesoDatos datos = new AccesoDatos();
-        public bool BuscarVoucher(string codigo)
+        public bool BuscarVoucher(string codigo, ref bool valido)
         {
 
             string consulta = "SELECT CodigoVoucher, IdCliente, FechaCanje, IdArticulo FROM Vouchers WHERE CodigoVoucher = @codigo ";
@@ -27,10 +27,12 @@ namespace Servicio
                     if (Convert.IsDBNull(datos.Lector["IdCliente"]))
                         return true;
 
+                    valido = false;
                     return false;
                 }
                 else
                 {
+                    valido = true;
                     return false;
                 }
 

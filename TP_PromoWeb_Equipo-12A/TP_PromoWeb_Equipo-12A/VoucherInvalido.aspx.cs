@@ -11,7 +11,16 @@ namespace TP_PromoWeb_Equipo_12A
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            bool valido = bool.Parse(Request.QueryString["valido"]);
 
+            if (valido)
+            {
+                txtVouvherInvalido.Text = "¡El código ingresado es inválido!";
+            }
+            else
+            {
+                txtVouvherInvalido.Text = "¡El código ingresado ya fue utilizado!";
+            }
         }
 
         protected void btninicio_Click(object sender, EventArgs e)
