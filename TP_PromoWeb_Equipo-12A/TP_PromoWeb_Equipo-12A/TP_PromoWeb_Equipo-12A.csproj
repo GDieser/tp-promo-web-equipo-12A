@@ -74,6 +74,7 @@
     <Content Include="RegistroUsuario.aspx" />
     <Content Include="ElegirPremio.aspx" />
     <Content Include="Web.config" />
+    <Content Include="IngresoVoucher.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="RegistroUsuario.aspx.designer.cs">
       <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoVoucher.aspx.cs">
+      <DependentUpon>IngresoVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresoVoucher.aspx.designer.cs">
+      <DependentUpon>IngresoVoucher.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

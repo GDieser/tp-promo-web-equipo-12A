@@ -19,7 +19,7 @@
         <div class="card " style="width: 18rem;">
             <img src="https://cdn-icons-png.flaticon.com/512/3209/3209955.png" class="card-img-top" alt="regalo">
             <div class="card-body d-grid gap-2">
-                <a href="#" class="btn btn-success">¡Participa!</a>
+                <a href="IngresoVoucher.aspx" class="btn btn-success">¡Participa!</a>
             </div>
         </div>
     </div>
