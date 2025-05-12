@@ -86,9 +86,17 @@ namespace TP_PromoWeb_Equipo_12A
             };
 
             ServicioCliente servicioCliente = new ServicioCliente();
-            bool exito = cliente.IdCliente == 0
-                ? servicioCliente.altaCliente(cliente) != 0
-                : servicioCliente.actualizarCliente(cliente);
+            bool exito;
+
+            if (cliente.IdCliente == 0)
+            {
+                cliente.IdCliente = servicioCliente.altaCliente(cliente); 
+                exito = cliente.IdCliente != 0;
+            }
+            else
+            {
+                exito = servicioCliente.actualizarCliente(cliente);
+            }
 
             if (exito)
             {
